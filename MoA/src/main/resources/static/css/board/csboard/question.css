@@ -95,21 +95,47 @@
     height: 50px;
 }
 
-.type-content{
-    display: flex;
-}
-
 .typebox-in {
-
-    display: flex;
+   
+    display: none;
     cursor: pointer;
-    
 }
 
+
+.active {
+    display: block;
+}
+
+
+
+.question-content{
+    font-size: 25px;
+    padding: 15px;
+    background-color: #CFCFCF;
+    border-radius: 20px;
+    width: 1350px;
+    height: 293px;
+    display: inline-block;
+}
+
+
+.question-content {
+    display: none;
+}
+
+
+.question-content.active {
+    display: block; /* active일 때 보이게 */
+}
 
 
 .typebox{
     height: 50%;
+    
+}
+
+.tt{
+    display: none;
 }
 
 .search-box {
@@ -127,54 +153,27 @@
     
 }
 
-label.type {
+label.type1 {
 
-    border: 1px solid black;
+    border: 0px;
     padding: 4px;
     width: 1170px;
     height: 50px;
     cursor: pointer;
-    display: flex;
+    font-size: 40px;
     
-    
-    font-size: 25px;
 
 }
 
-.question-content{
-    font-size: 25px;
-    padding: 15px;
-    background-color: #CFCFCF;
-    border-radius: 20px;
-    width: 1350px;
-    height: 293px;
-    display: inline-block;
+.typebox-in.active {
+    display: inline;
 }
 
-
-
-input#type{
-
-    display: none;
-
-}
 
 .type-input {
-    display: inline-block;
+    
     width: 1400px;
     
-}
-
-nav#type-nav{
-
-    display: none;
-
-}
-
-input#type:checked + nav#type-nav{
-
-    display: block;
-
 }
 
 

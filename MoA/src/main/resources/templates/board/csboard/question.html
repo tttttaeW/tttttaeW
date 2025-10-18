@@ -45,9 +45,9 @@
                 
                 <section class="typebox">
 
-                    <section id="tab1" class="tap-content active">
+                    <section  class="tab-content">
 
-                        <span class="typebox-in">
+                        <span class="typebox-in active tab1" data-con="con1">
     
                             <span class="search-box">
                                 <img class="search" th:src="@{/images/board/csboard/search.png}">
@@ -55,19 +55,38 @@
                             </span>
                             <span class="type-input">
                                 
-                                <label class="type" for="type">type</label>
-                                <input id="type" type="checkbox">
+                                <label class="type1" for="typea">type</label>
+                                <input id="typea" class="tt" type="checkbox">
         
                             </span>
     
                         </span>
-                        <div class="question-content">ddddddddddddddddddddd</div>
+                        <div class="question-content con1">ddddddddddddddddddddd</div>
+
+                    </section>
+                    <section  class="tab-content">
+
+                        <span class="typebox-in active tab1" data-con="con2">
+    
+                            <span class="search-box">
+                                <img class="search" th:src="@{/images/board/csboard/search.png}">
+        
+                            </span>
+                            <span class="type-input">
+                                
+                                <label class="type1" for="typeb">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</label>
+                                <input id="typeb" class="tt" type="checkbox">
+        
+                            </span>
+    
+                        </span>
+                        <div class="question-content con2">ddddddddddddddddddddd</div>
 
                     </section>
 
-                    <section id="tab2" class="tab-content">
+                    <section class="tab-content">
 
-                        <span class="typebox-in">
+                        <span class="typebox-in tab2" data-con="con3">
     
                                 <span class="search-box">
                                     <img class="search" th:src="@{/images/board/csboard/search.png}">
@@ -75,27 +94,19 @@
                                 </span>
                                 <span>
                                     
-                                    <label class="type" for="type">type</label>
-                                    <input id="type" type="checkbox">
+                                    <label class="type1" for="typec">type</label>
+                                    <input id="typec" class="tt" type="checkbox">
     
                                 </span>
                                 
                         </span>
-                        <div class="question-content">ddddddddddddddddddddd</div>
+                        <div class="question-content con3">ddddddddddddddddddddd</div>
 
                     </section>
                     
 
                     
-                    <nav id="type-nav">
-                        <ul>
-                            <li>dddd</li>
-                            <li>dddd</li>
-                            <li>dddd</li>
-    
-                        </ul>
-    
-                    </nav>
+                    
         
                 </section>
                 
@@ -168,18 +179,7 @@
                 </section>
 
 
-                <section>
-
-                    <button class="custom-button">
-                        <img th:src="@{logo.png}" alt="Logo" class="logo">
-                        <div class="text">
-                            <span>첫 번째 텍스트</span>
-                            <span>두 번째 텍스트</span>
-                        </div>
-                    </button>
-
-                </section>
-
+                
             </section>
 
 
@@ -189,6 +189,9 @@
 
 
     </main>
+
+
+    <script th:src="@{/js/board/csboard/question.js}"></script>
     
 </body>
 </html>
